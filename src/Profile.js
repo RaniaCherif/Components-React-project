@@ -23,8 +23,8 @@ const Profile = () => {
                   <div className="flex-shrink-0">
                     <MDBCardImage
                       style={{ width: "180px", borderRadius: "10px" }}
-                      src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-1.webp"
-                      alt="Generic placeholder image"
+                      src="profile.jpg"
+                      alt="my image"
                       fluid
                     />
                   </div>
