@@ -1,21 +1,11 @@
 import React from "react";
-import {
-  MDBCol,
-  MDBContainer,
-  MDBRow,
-  MDBCard,
-  MDBCardTitle,
-  MDBCardText,
-  MDBCardBody,
-  MDBCardImage,
-  MDBBtn,
-} from "mdb-react-ui-kit";
+import { MDBCardTitle, MDBCardText, MDBBtn } from "mdb-react-ui-kit";
 
-const Profile = () => {
+const FullName = () => {
   return (
     <div className="flex-grow-1 ms-3">
-      <MDBCardTitle>Rania Cherif</MDBCardTitle>
-      <MDBCardText>FullStack Js Developer </MDBCardText>
+      <MDBCardText className="text-center">Rania Cherif</MDBCardText>
+      <MDBCardText className="text-center">Full Stack Developer</MDBCardText>
 
       <div
         className="d-flex justify-content-start rounded-3 p-2 mb-2"
@@ -41,5 +31,6 @@ const Profile = () => {
         <MDBBtn className="flex-grow-1">Follow</MDBBtn>
       </div>
     </div>
-  );}
-  export default FullName;
+  );
+};
+export default FullName;
