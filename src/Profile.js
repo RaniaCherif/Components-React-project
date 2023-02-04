@@ -11,6 +11,7 @@ import {
   MDBBtn,
 } from "mdb-react-ui-kit";
 
+
 const Profile = () => {
   return (
     <div className="vh-100" style={{ backgroundColor: "#9de2ff" }}>
