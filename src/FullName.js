@@ -1,4 +1,5 @@
 import React from "react";
+import Adress from "./Adress";
 import { MDBCardText, MDBBtn } from "mdb-react-ui-kit";
 
 const FullName = () => {
@@ -30,6 +31,8 @@ const FullName = () => {
         </MDBBtn>
         <MDBBtn className="flex-grow-1">Follow</MDBBtn>
       </div>
+      <br></br>
+      <Adress></Adress>
     </div>
   );
 };
