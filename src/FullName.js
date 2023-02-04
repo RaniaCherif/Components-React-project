@@ -1,5 +1,5 @@
 import React from "react";
-import { MDBCardTitle, MDBCardText, MDBBtn } from "mdb-react-ui-kit";
+import { MDBCardText, MDBBtn } from "mdb-react-ui-kit";
 
 const FullName = () => {
   return (
