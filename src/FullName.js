@@ -1,14 +1,14 @@
 import React from "react";
 import Adress from "./Adress";
+import Prof from "./Prof";
 import Data from "./Data";
 import { MDBCardText, MDBBtn } from "mdb-react-ui-kit";
 
 const FullName = (props) => {
   return (
     <div className="flex-grow-1 ms-3">
-      <MDBCardText className="text-center">{props.name}</MDBCardText>
-      <MDBCardText className="text-center">{props.prof}</MDBCardText>
-
+      <MDBCardText className="text-center">{props.Name}</MDBCardText>
+      <Prof prof={props.Prof}/>
       <div
         className="d-flex justify-content-start rounded-3 p-2 mb-2"
         style={{ backgroundColor: "#efefef" }}

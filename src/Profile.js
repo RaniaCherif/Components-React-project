@@ -10,7 +10,7 @@ import {
 import FullName from "./FullName";
 import Data from "./Data";
 
-const Profile = () => {
+const Profile = (props) => {
   return (
     <div className="vh-70 " style={{ backgroundColor: "#cdc9d7" }}>
       <MDBContainer>
@@ -22,13 +22,13 @@ const Profile = () => {
                   <div className="flex-shrink-0">
                     <MDBCardImage
                       style={{ width: "180px", borderRadius: "10px" }}
-                      src="profile.jpg"
+                      src={props.Img}
                       alt="Generic placeholder image"
                       fluid
                     />
                   </div>
                   <FullName
-                  name={Data[0].name}/>
+                  Name={props.Name} Prof={props.Prof}/>
                 </div>
               </MDBCardBody>
             </MDBCard>
