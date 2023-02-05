@@ -15,7 +15,7 @@ const Profile = (props) => {
   
   return (
     <>
-      <Alert/>
+      <Alert Name={props.Name}/>
 
       <div className="vh-70 " style={{ backgroundColor: "#cdc9d7" }}>
         <MDBContainer>

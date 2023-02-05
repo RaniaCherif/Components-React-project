@@ -10,32 +10,32 @@ import {
   MDBModalFooter,
 } from "mdb-react-ui-kit";
 
-export default function Alert() {
+export default function Alert(props) {
   const [basicModal, setBasicModal] = useState(false);
 
   const toggleShow = () => setBasicModal(!basicModal);
 
   return (
     <>
-      <MDBBtn onClick={toggleShow}>LAUNCH DEMO MODAL</MDBBtn>
+      <MDBBtn onClick={toggleShow}>Show Alert</MDBBtn>
       <MDBModal show={basicModal} setShow={setBasicModal} tabIndex="-1">
         <MDBModalDialog>
           <MDBModalContent>
             <MDBModalHeader>
-              <MDBModalTitle>Modal title</MDBModalTitle>
+              <MDBModalTitle>who is connecting?</MDBModalTitle>
               <MDBBtn
                 className="btn-close"
                 color="none"
                 onClick={toggleShow}
               ></MDBBtn>
             </MDBModalHeader>
-            <MDBModalBody>...</MDBModalBody>
+            <MDBModalBody> {props.Name} is connect</MDBModalBody>
 
             <MDBModalFooter>
               <MDBBtn color="secondary" onClick={toggleShow}>
                 Close
               </MDBBtn>
-              <MDBBtn>Save changes</MDBBtn>
+              <MDBBtn>Log out</MDBBtn>
             </MDBModalFooter>
           </MDBModalContent>
         </MDBModalDialog>
