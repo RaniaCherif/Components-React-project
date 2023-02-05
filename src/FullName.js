@@ -1,12 +1,13 @@
 import React from "react";
 import Adress from "./Adress";
+import Data from "./Data";
 import { MDBCardText, MDBBtn } from "mdb-react-ui-kit";
 
-const FullName = () => {
+const FullName = (props) => {
   return (
     <div className="flex-grow-1 ms-3">
-      <MDBCardText className="text-center">Rania Cherif</MDBCardText>
-      <MDBCardText className="text-center">Full Stack Developer</MDBCardText>
+      <MDBCardText className="text-center">{props.name}</MDBCardText>
+      <MDBCardText className="text-center">{props.prof}</MDBCardText>
 
       <div
         className="d-flex justify-content-start rounded-3 p-2 mb-2"
@@ -32,7 +33,7 @@ const FullName = () => {
         <MDBBtn className="flex-grow-1">Follow</MDBBtn>
       </div>
       <br></br>
-      <Adress></Adress>
+      <Adress />
     </div>
   );
 };

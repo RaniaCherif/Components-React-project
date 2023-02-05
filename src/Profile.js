@@ -8,6 +8,7 @@ import {
   MDBCardImage,
 } from "mdb-react-ui-kit";
 import FullName from "./FullName";
+import Data from "./Data";
 
 const Profile = () => {
   return (
@@ -26,8 +27,8 @@ const Profile = () => {
                       fluid
                     />
                   </div>
-
-                  <FullName></FullName>
+                  <FullName
+                  name={Data[0].name}/>
                 </div>
               </MDBCardBody>
             </MDBCard>
