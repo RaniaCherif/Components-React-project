@@ -8,7 +8,6 @@ import {
   MDBCardImage,
 } from "mdb-react-ui-kit";
 import FullName from "./FullName";
-import Data from "./Data";
 
 const Profile = (props) => {
   return (
@@ -28,7 +27,10 @@ const Profile = (props) => {
                     />
                   </div>
                   <FullName
-                  Name={props.Name} Prof={props.Prof}/>
+                    Name={props.Name}
+                    Prof={props.Prof}
+                    Adress={props.Adress}
+                  />
                 </div>
               </MDBCardBody>
             </MDBCard>

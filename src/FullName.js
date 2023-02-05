@@ -1,7 +1,6 @@
 import React from "react";
 import Adress from "./Adress";
 import Prof from "./Prof";
-import Data from "./Data";
 import { MDBCardText, MDBBtn } from "mdb-react-ui-kit";
 
 const FullName = (props) => {
@@ -33,7 +32,7 @@ const FullName = (props) => {
         <MDBBtn className="flex-grow-1">Follow</MDBBtn>
       </div>
       <br></br>
-      <Adress />
+      <Adress Adress={props.Adress} />
     </div>
   );
 };
