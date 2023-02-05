@@ -1,14 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
+import {
+  MDBBtn,
+  MDBModal,
+  MDBModalDialog,
+  MDBModalContent,
+  MDBModalHeader,
+  MDBModalTitle,
+  MDBModalBody,
+  MDBModalFooter,
+} from "mdb-react-ui-kit";
 
-const Alert = (props) => {
+export default function Alert() {
+  const [basicModal, setBasicModal] = useState(false);
+
+  const toggleShow = () => setBasicModal(!basicModal);
+
   return (
-    <div class="alert alert-secondary" role="alert">
-      This is a primiry alert with
-      <a href="#" class="alert-link">
-        {props.name}
-      </a>
-      . Give it a click if you like.
-    </div>
+    <>
+      <MDBBtn onClick={toggleShow}>LAUNCH DEMO MODAL</MDBBtn>
+      <MDBModal show={basicModal} setShow={setBasicModal} tabIndex="-1">
+        <MDBModalDialog>
+          <MDBModalContent>
+            <MDBModalHeader>
+              <MDBModalTitle>Modal title</MDBModalTitle>
+              <MDBBtn
+                className="btn-close"
+                color="none"
+                onClick={toggleShow}
+              ></MDBBtn>
+            </MDBModalHeader>
+            <MDBModalBody>...</MDBModalBody>
+
+            <MDBModalFooter>
+              <MDBBtn color="secondary" onClick={toggleShow}>
+                Close
+              </MDBBtn>
+              <MDBBtn>Save changes</MDBBtn>
+            </MDBModalFooter>
+          </MDBModalContent>
+        </MDBModalDialog>
+      </MDBModal>
+    </>
   );
-};
-export default Alert;
+}

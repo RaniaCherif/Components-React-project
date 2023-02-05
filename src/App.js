@@ -4,6 +4,10 @@ import Data from "./Data";
 import "./App.css";
 
 function App() {
+  function handelName(name) {
+    console.log("this is profile name is" + name);
+  }
+
   return (
     <React.Fragment>
       <Profile
@@ -11,6 +15,7 @@ function App() {
         Img={Data[0].img}
         Name={Data[0].name}
         Adress={Data[0].adress}
+        OnNameChange={handelName(Data[0].name)}
       />
       <Profile
         Prof={Data[1].prof}
